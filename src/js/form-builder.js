@@ -19,7 +19,8 @@
         'radio-group',
         'select',
         'text',
-        'textarea'
+        'textarea',
+        'number'
       ],
       dataType: 'xml',
       /**
@@ -149,7 +150,8 @@
             'text',
             'password',
             'email',
-            'color'
+            'color',
+            'number'
           ],
           button: [
             'button',
@@ -192,6 +194,7 @@
 
     // @todo function to set parent types for subtypes
     defaults.messages.subtypes.password = defaults.messages.subtypes.text;
+    defaults.messages.subtypes.number = defaults.messages.subtypes.text;
     defaults.messages.subtypes.email = defaults.messages.subtypes.text;
     defaults.messages.subtypes.color = defaults.messages.subtypes.text;
     defaults.messages.subtypes.submit = defaults.messages.subtypes.button;
